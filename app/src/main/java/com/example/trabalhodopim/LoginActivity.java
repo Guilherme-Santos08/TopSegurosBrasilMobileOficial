@@ -21,5 +21,8 @@ public class LoginActivity extends AppCompatActivity {
         binding.textCadastro.setOnClickListener(view -> {
             startActivity(new Intent(this, CadastroActivity.class));
         });
+
+        binding.textRecuperaConta.setOnClickListener(v ->
+                startActivity(new Intent(this, RecuperaContaActivity.class)));
     }
 }
